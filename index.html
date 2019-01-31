@@ -36,10 +36,27 @@
       "name": "My Page Name"
     }
   }
+  {
+    "vars": {
+      "writeKey": "WRITE_KEY",
+      "name": "My Page Name"
+    }
+    "triggers": {
+      "click": {
+        "on": "click",
+        "selector": ".read-more-button",
+        "request": "track",
+        "vars": {
+          "event": "Read More Clicked"
+        }
+      }
+    }
+  }
 </script>
 </amp-analytics>
     
 <button class="read-more-button">Read More</button>
     <h1>Welcome to the mobile web</h1>
+    <button class="read-more-button">Read More</button>
   </body>
 </html>
